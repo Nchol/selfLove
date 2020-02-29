@@ -11,89 +11,97 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>SelfLove</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar  navbar-expand-lg navbar-light">
-        <a class="navbar-text title" href="#">SelfLove</a>
-      </nav>
-    </div>
-    <main>
-      <!-- banner -->
-      <div class="container">
-        <div class="row">
-          <div class="banner">
-            <div class="banner-text">
-              <h1>Selamat datang di Ruang Curhat</h1>
-              <br />
-              <h1>
-                Mulai curhat yuk!
-              </h1>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center">
+        <nav class="navbar  navbar-expand-lg navbar-light">
+          <a class="navbar-text title" href="#">SelfLove</a>
+        </nav>
+      </div>
+      <div class="divider"></div>
+      <main>
+        <!-- banner -->
+        <div class="container">
+          <div class="row">
+            <div class="banner">
+              <div class="banner-text">
+                <h1>Selamat datang di Ruang Curhat</h1>
+                <br />
+                <h1>
+                  Mulai curhat yuk!
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- end of banner -->
-
-      <!-- form -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-lg-3"></div>
-          <form class="col-lg-6 curhat">
-            <fieldset id="darurat">
-              <label class="title-form">Apakah ini darurat?</label>
+        <!-- end of banner -->
+  
+        <!-- form -->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-3"></div>
+            <form class="col-lg-6 curhat">
+              <fieldset id="darurat">
+                <label class="title-form">Apakah ini darurat?</label>
+                <label class="container"
+                  >Iya
+                  <input type="radio" name="darurat" />
+                  <span class="checkmark"></span>
+                </label>
+              </fieldset>
               <label class="container"
-                >Iya
+                >Tidak
                 <input type="radio" name="darurat" />
                 <span class="checkmark"></span>
               </label>
-            </fieldset>
-            <label class="container"
-              >Tidak
-              <input type="radio" name="darurat" />
-              <span class="checkmark"></span>
-            </label>
-            <div class="divider"></div>
-            <fieldset id="kondisi">
-              <label class="title-form">Bagaimana kondisinya sekarang?</label>
+              <div class="divider"></div>
+              <fieldset id="kondisi">
+                <label class="title-form">Bagaimana kondisinya sekarang?</label>
+                <label class="container"
+                  >Baik
+                  <input type="radio" name="kondisi" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"
+                  >Tidak Baik
+                  <input type="radio" name="kondisi" />
+                  <span class="checkmark"></span>
+                </label>
+              </fieldset> 
+              <div class="divider"></div>
+              <fieldset id="keadaan">
+              <label class="title-form"
+                >Bagaimana pola tidur belakangan ini?</label
+              >
               <label class="container"
-                >Baik
-                <input type="radio" name="kondisi" />
+                >Cukup
+                <input type="radio" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <label class="container"
-                >Tidak Baik
-                <input type="radio" name="kondisi" />
+                >Kurang
+                <input type="radio" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
-            </fieldset> 
-            <div class="divider"></div>
-            <fieldset id="keadaan">
-            <label class="title-form"
-              >Bagaimana pola tidur belakangan ini?</label
-            >
-            <label class="container"
-              >Cukup
-              <input type="radio" name="keadaan" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Kurang
-              <input type="radio" name="keadaan" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Berlebih
-              <input type="radio" name="keadaan" />
-              <span class="checkmark"></span>
-            </label>
-            <div class="divider"></div>
-          </form>
-          <div class="col-lg-3"></div>
+              <label class="container"
+                >Berlebih
+                <input type="radio" name="keadaan" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="divider"></div>
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </div>
+            </form>
+            <div class="col-lg-3"></div>
+          </div>
         </div>
-      </div>
-      <!-- end of form -->
-    </main>
+        <!-- end of form -->
+        </div>
+      </main>
+    </div>
+    
   </body>
 </html>
