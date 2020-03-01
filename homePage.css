@@ -1,0 +1,23 @@
+.carousel-item {
+    height:350px;
+}
+
+.userProfile {
+    font-size: 82px;
+}
+
+.textHPage {
+    margin-left: 24px;
+}
+
+.cards{
+    background-color: red;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+.display-grid {
+    display: grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-row:auto;
+}
+

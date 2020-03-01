@@ -1,99 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./daftar.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar  navbar-expand-lg navbar-light">
+      <a class="navbar-text title" href="#">SelfLove</a>
+    </nav>
+  </div>
+  <main>
+    <!-- banner -->
     <div class="container">
-      <nav class="navbar  navbar-expand-lg navbar-light">
-        <a class="navbar-text title" href="#">SelfLove</a>
-      </nav>
-    </div>
-    <main>
-      <!-- banner -->
-      <div class="container">
-        <div class="row">
-          <div class="banner">
-            <div class="banner-text">
-              <h1>Selamat datang di Ruang Curhat</h1>
-              <br />
-              <h1>
-                Mulai curhat yuk!
-              </h1>
-            </div>
+      <div class="row">
+        <div class="banner">
+          <div class="banner-text">
+            <h1>Selamat datang di Ruang Curhat</h1>
+            <br />
+            <h1>
+              Mulai curhat yuk!
+            </h1>
           </div>
         </div>
       </div>
-      <!-- end of banner -->
+    </div>
+    <!-- end of banner -->
 
-      <!-- form -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-lg-3"></div>
-          <form class="col-lg-6 curhat">
-            <fieldset id="darurat">
-              <label class="title-form">Apakah ini darurat?</label>
-              <label class="container"
-                >Iya
-                <input type="radio" name="darurat" />
-                <span class="checkmark"></span>
-              </label>
-            </fieldset>
-            <label class="container"
-              >Tidak
+    <!-- form -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <form class="col-lg-6 curhat">
+          <fieldset id="darurat">
+            <label class="title-form">Apakah ini darurat?</label>
+            <label class="container">Iya
               <input type="radio" name="darurat" />
               <span class="checkmark"></span>
             </label>
-            <div class="divider"></div>
-            <fieldset id="kondisi">
-              <label class="title-form">Bagaimana kondisinya sekarang?</label>
-              <label class="container"
-                >Baik
-                <input type="radio" name="kondisi" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container"
-                >Tidak Baik
-                <input type="radio" name="kondisi" />
-                <span class="checkmark"></span>
-              </label>
-            </fieldset> 
-            <div class="divider"></div>
-            <fieldset id="keadaan">
-            <label class="title-form"
-              >Bagaimana pola tidur belakangan ini?</label
-            >
-            <label class="container"
-              >Cukup
+          </fieldset>
+          <label class="container">Tidak
+            <input type="radio" name="darurat" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="divider"></div>
+          <fieldset id="kondisi">
+            <label class="title-form">Bagaimana kondisinya sekarang?</label>
+            <label class="container">Baik
+              <input type="radio" name="kondisi" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Tidak Baik
+              <input type="radio" name="kondisi" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+          <div class="divider"></div>
+          <fieldset id="keadaan">
+            <label class="title-form">Bagaimana pola tidur belakangan ini?</label>
+            <label class="container">Cukup
               <input type="radio" name="keadaan" />
               <span class="checkmark"></span>
             </label>
-            <label class="container"
-              >Kurang
+            <label class="container">Kurang
               <input type="radio" name="keadaan" />
               <span class="checkmark"></span>
             </label>
-            <label class="container"
-              >Berlebih
+            <label class="container">Berlebih
               <input type="radio" name="keadaan" />
               <span class="checkmark"></span>
             </label>
             <div class="divider"></div>
-          </form>
-          <div class="col-lg-3"></div>
-        </div>
+        </form>
+        <div class="col-lg-3"></div>
       </div>
-      <!-- end of form -->
-    </main>
-  </body>
+    </div>
+    <!-- end of form -->
+  </main>
+</body>
+
 </html>
