@@ -2,35 +2,71 @@
     font-size: 40px;
   }
   
-  .banner {
-    height: 300px;
-    width: 100%;
-    background-color: #d1d1dd;
-    position: relative;
-    padding: 16px;
-  }
+.banner {
+  height: 300px;
+  width: 100%;
+  background-color: #d1d1dd;
+  position: relative;
+  padding: 16px;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.title-form {
+  font-size: 22px;
+}
+
+.divider {
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.curhat {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+input[type="radio"] {
+  margin-left: 8px;
+}
   
-  .banner-text {
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .title-form {
-    font-size: 22px;
-  }
-  
-  .divider {
-    border: 1px solid lightgrey;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .curhat {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 12px;
-  }
-  
-  input[type="radio"] {
-    margin-left: 8px;
-  }
-  
+.carousel-item {
+  max-height: 350px;
+}
+
+.font-size32 {
+  font-size: 32px;
+}
+
+.row {
+  padding: 12px 64px;
+}
+
+.margin-x16 {
+  margin: 0 16px;
+}
+
+.circle-green {
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.chat {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+#myInput {
+  width: 100%;
+}
+
+.chat > .d-flex > i {
+  margin: 16px;
+}
