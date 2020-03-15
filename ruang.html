@@ -1,107 +1,99 @@
-let countDeath = 0;
-function getTime() {
-  const dt = dayjs().format("HH:mm A | MMMM DD");
-  return dt;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-function generateChat(msg) {
-  const txtSender = `<div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
-    <div class="media-body ml-3">
-        <div class="bg-light rounded py-2 px-3 mb-2" style="width: 200px;">
-        <p class="text-small mb-0 text-muted">${msg}</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <title>SelfLove</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <nav class="navbar  navbar-expand-lg navbar-light">
+        <a class="navbar-text title">SelfLove</a>
+      </nav>
+    </div>
+    <div class="divider"></div>
+    <main>
+      <!-- banner -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 ">
+            <div class="banner">
+              <div class="banner-text">
+                <h4>Selamat datang di Ruang Curhat</h4>
+                <br />
+                <h4>
+                  Mulai curhat yuk!
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="small text-muted">${getTime()}</p>
-    </div>
-  </div>`;
-  return txtSender;
-}
-
-function generateChatBotMsg(msg) {
-  getTime();
-  const reciever = ` <div class="media w-50 ml-auto mb-3">
-    <div class="media-body">
-      <div class="bg-primary rounded py-2 px-3 mb-2" style="width: 200px;">
-        <p class="text-small mb-0 text-white">${msg}</p>
       </div>
-      <p class="small text-muted">${getTime()}</p>
-    </div>
-  </div>`;
-  return reciever;
-}
+      <!-- end of banner -->
 
-function autoGenerate() {
-  const msg =
-    "Sepertinya kamu sedang mengalami masa yang sulit. Apa yang kamu rasakan saat ini?";
-  chat = generateChatBotMsg(msg);
-  $("#container-chat").append(chat);
-}
+      <!-- form -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <form class="col-sm-6 curhat">
+            <fieldset id="darurat">
+              <label class="title-form">Apakah ini darurat?</label>
+              <label class="container">Iya
+                <input type="radio" name="darurat" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <label class="container">Tidak
+              <input type="radio" name="darurat" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="divider"></div>
+            <fieldset id="kondisi">
+              <label class="title-form">Bagaimana kondisinya sekarang?</label>
+              <label class="container">Baik
+                <input type="radio" name="kondisi" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Tidak Baik
+                <input type="radio" name="kondisi" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset id="keadaan">
+              <label class="title-form">Bagaimana pola tidur belakangan ini?</label>
+              <label class="container">Cukup
+                <input type="radio" name="keadaan" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Kurang
+                <input type="radio" name="keadaan" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Berlebih
+                <input type="radio" name="keadaan" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="divider"></div>
+              <div class="d-flex justify-content-end"> 
+                <a href="./pemilihan_psikolog.html" type="submit" class="btn btn-primary">Kirim</a>
+              </div>
+          </form>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      <!-- end of form -->
+  </div>
+  </main>
+  </div>
 
-function actionToCall() {}
+</body>
 
-function bot(msg) {
-  const keyword =
-    msg
-      .toLowerCase()
-      .match(
-        /cerita|hi|mencoba|terima kasih|merasa|mengejek|bunuh diri|mati/
-      ) || [];
-  console.log(keyword);
-  let reply;
-  console.log(countDeath);
-  if (keyword[0] === "mati" && countDeath < 1) {
-    countDeath++;
-    reply = " Apakah kamu memiliki rencana bunuh diri?";
-  } else if (keyword[0] === "mati" && countDeath > 0) {
-    reply = "staf kami akan segera menghubungi anda";
-  } else {
-    switch (keyword[0]) {
-      case "merasa":
-        reply = "apa yang membuatmu merasa berbeda";
-        break;
-      case "cerita":
-        reply = "Halo, kamu boleh cerita disini. boleh tahu masalah mu apa?";
-        break;
-      case "hi":
-        reply = "Halo, kamu boleh cerita disini. boleh tahu masalah mu apa?";
-        break;
-      case "mencoba":
-        reply = "Semoga membantu. Apakah ada lagi yang bisa saya bantu?";
-        break;
-      case "terima kasih":
-        reply = "sama-sama semoga hari mu menyenangkan!";
-        break;
-      case "bunuh diri":
-        console.log(countDeath);
-        reply = "Apakah kamu tahu kapan kamu akan melakukan hal tersebut?";
-        break;
-      case "mengejek":
-        reply = "sepertinya kamu benar-benar sedih saat ini";
-        break;
-      default:
-        reply = "Saya tidak mengerti apa yang kamu maksud";
-    }
-  }
-
-  chat = generateChatBotMsg(reply);
-  $("#container-chat").append(chat);
-}
-
-function sendText() {
-  let msg = $("#txt-input").val();
-  if (!msg) {
-    return;
-  }
-  console.log(msg);
-  $("#txt-input").val("");
-
-  const chat = generateChat(msg);
-  $("#container-chat").append(chat);
-  setTimeout(() => {
-    bot(msg);
-  }, 500);
-}
-
-$(document).ready(() => {
-  console.log("ready");
-  autoGenerate();
-});
+</html>
