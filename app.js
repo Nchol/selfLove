@@ -2,7 +2,7 @@ function login() {
     const name = $("#userName").val()
     if (name) {
         localStorage.setItem('name', name)
-        window.location.href = "./index.html"
+        window.location.href = "/"
     }
   }
   
@@ -28,7 +28,7 @@ function login() {
     const name = localStorage.getItem('name')
     console.log(window.location.pathname)
     console.log(name);
-    const isHomepage = window.location.pathname === '/index.html'
+    const isHomepage = window.location.pathname === '/'
     console.log(isHomepage);
     
     const isLoginPage = window.location.pathname === '/masuk.html'
