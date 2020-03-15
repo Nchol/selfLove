@@ -46,23 +46,23 @@
             <fieldset id="darurat">
               <label class="title-form">Apakah ini darurat?</label>
               <label class="container">Iya
-                <input type="radio" name="darurat" />
+                <input type="radio"  onchange="handleOnchange('darurat', true)" value="Iya" name="darurat" />
                 <span class="checkmark"></span>
               </label>
+              <label class="container">Tidak
+                <input type="radio" value="tidak" onchange="handleOnchange('darurat', false)" name="darurat" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="divider"></div>
             </fieldset>
-            <label class="container">Tidak
-              <input type="radio" name="darurat" />
-              <span class="checkmark"></span>
-            </label>
-            <div class="divider"></div>
             <fieldset id="kondisi">
               <label class="title-form">Bagaimana kondisinya sekarang?</label>
               <label class="container">Baik
-                <input type="radio" name="kondisi" />
+                <input type="radio" value="baik" onchange="handleOnchange('kondisi', true)" name="kondisi" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Tidak Baik
-                <input type="radio" name="kondisi" />
+                <input type="radio" value="tidak baik" onchange="handleOnchange('kondisi', false)" name="kondisi" />
                 <span class="checkmark"></span>
               </label>
             </fieldset>
@@ -70,21 +70,22 @@
             <fieldset id="keadaan">
               <label class="title-form">Bagaimana pola tidur belakangan ini?</label>
               <label class="container">Cukup
-                <input type="radio" name="keadaan" />
+                <input type="radio" value="cukup" onchange="handleOnchange('keadaan', )" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Kurang
-                <input type="radio" name="keadaan" />
+                <input type="radio" value="kurang" onchange="handleOnchange('keadaan', )" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Berlebih
-                <input type="radio" name="keadaan" />
+                <input type="radio" value="berlebih" onchange="handleOnchange('keadaan', )" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <div class="divider"></div>
-              <div class="d-flex justify-content-end"> 
-                <a href="./pemilihan_psikolog.html" type="submit" class="btn btn-primary">Kirim</a>
+              <div class="d-flex justify-content-end">
+                <a href="./pemilihan_psikolog.html" type="submit"  class=" btn btn-primary">Kirim</a>
               </div>
+            </fieldset>
           </form>
           <div class="col-sm-3"></div>
         </div>
@@ -94,6 +95,19 @@
   </main>
   </div>
 
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./ruang.js"></script>
 </body>
 
 </html>

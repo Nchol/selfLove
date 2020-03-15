@@ -27,10 +27,15 @@ function login() {
     console.log('load')
     const name = localStorage.getItem('name')
     console.log(window.location.pathname)
-    const isHomepage = window.location.pathname === '/'
+    console.log(name);
+    const isHomepage = window.location.pathname === '/index.html'
+    console.log(isHomepage);
+    
     const isLoginPage = window.location.pathname === '/masuk.html'
     // auth guard
     if (isHomepage) {
+        console.log(name);
+        
         if (name) {
             $("#greet").text(`Halo ${name}!`)
         } else {
@@ -42,3 +47,9 @@ function login() {
         }
     }
   })
+
+
+  
+  
+  
+  
