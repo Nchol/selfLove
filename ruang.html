@@ -70,15 +70,15 @@
             <fieldset id="keadaan">
               <label class="title-form">Bagaimana pola tidur belakangan ini?</label>
               <label class="container">Cukup
-                <input type="radio" value="cukup" onchange="handleOnchange('keadaan', )" name="keadaan" />
+                <input type="radio" value="cukup" onchange="handleOnchange('keadaan', true)" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Kurang
-                <input type="radio" value="kurang" onchange="handleOnchange('keadaan', )" name="keadaan" />
+                <input type="radio" value="kurang" onchange="handleOnchange('keadaan', false)" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Berlebih
-                <input type="radio" value="berlebih" onchange="handleOnchange('keadaan', )" name="keadaan" />
+                <input type="radio" value="berlebih" onchange="handleOnchange('keadaan', null)" name="keadaan" />
                 <span class="checkmark"></span>
               </label>
               <div class="divider"></div>

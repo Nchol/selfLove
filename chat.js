@@ -100,6 +100,13 @@ function sendText() {
     bot(msg);
   }, 500);
 }
+function enterBtn() {
+  if (event.keyCode === 122) {
+    console.log('mantap');
+    
+  }
+}
+
 
 $(document).ready(() => {
   console.log("ready");

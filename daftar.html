@@ -6,84 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./daftar.css">
     <title>Document</title>
 </head>
 
-<body>
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mt-5">
-                    <h1>Daftar</h1>
+<body background="/assets/bg-login.jpg">
+    <div class="cards">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center ">
+                        <h1>Register</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="col-sm-6">
-                    <form>
-                        <div class="form-group row">
-                            <label for="daftarNama" class="col-sm-4 col col-form-label">Nama</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-input-custom form-control" id="daftarNama"
-                                    placeholder="">
+        </section>
+        <section>
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="col-sm-6">
+                        <form>
+                            <div class="form-group row">
+                                <label for="daftarNama" class="col-sm-4 col col-form-label">Nama</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-input-custom form-control" id="daftarNama"
+                                        placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarKataSandi" class="col-sm-4 col col-form-label">Kata Sandi</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-input-custom form-control" id="daftarKataSandi"
-                                    placeholder="">
+                            <div class="form-group row">
+                                <label for="daftarKataSandi" class="col-sm-4 col col-form-label">Kata Sandi</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-input-custom form-control" id="daftarKataSandi"
+                                        placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarUmur" class="col-sm-4 col col-form-label">Umur</label>
-                            <div class="col-sm-8">
-                                <input type="number" min="1" class="form-input-custom form-control" id="daftarUmur"
-                                    placeholder="">
+                            <div class="form-group row">
+                                <label for="daftarUmur" class="col-sm-4 col col-form-label">Umur</label>
+                                <div class="col-sm-8">
+                                    <input type="number" min="1" class="form-input-custom form-control" id="daftarUmur"
+                                        placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarTanggalLahir" class="col-sm-4 col col-form-label">Tanggal
-                                Lahir</label>
-                            <div class="col-sm-8">
-                                <input type="date" class="form-input-custom form-control" id="daftarTanggalLahir"
-                                    placeholder="">
+                            <div class="form-group row">
+                                <label for="daftarTanggalLahir" class="col-sm-4 col col-form-label">Tanggal
+                                    Lahir</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-input-custom form-control" id="daftarTanggalLahir"
+                                        placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarJenisKelamin" class="col-sm-4 col col-form-label">Jenis
-                                Kelamin</label>
+                            <div class="form-group row">
+                                <label for="daftarJenisKelamin" class="col-sm-4 col col-form-label">Jenis
+                                    Kelamin</label>
 
-                            <div class="col-sm-8">
-                                <select id="daftarJenisKelamin" class="form-input-custom form-control">
-                                    <option selected>.......</option>
-                                    <option>Laki-laki</option>
-                                    <option>Perempuan</option>
-                                </select>
+                                <div class="col-sm-8">
+                                    <select id="daftarJenisKelamin" class="form-input-custom form-control">
+                                        <option selected>.......</option>
+                                        <option>Laki-laki</option>
+                                        <option>Perempuan</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarEmail" class="col-sm-4 col col-form-label">Email</label>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-input-custom form-control" id="daftarEmail"
-                                    placeholder="">
+                            <div class="form-group row">
+                                <label for="daftarEmail" class="col-sm-4 col col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-input-custom form-control" id="daftarEmail"
+                                        placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="daftarNoTelp" class="col-sm-4 col col-form-label">No Telp.</label>
-                            <div class="col-sm-8">
-                                <input type="number" min="0" class="form-input-custom form-control" id="daftarNoTelp"
-                                    placeholder="">
+                            <div class="form-group row">
+                                <label for="daftarNoTelp" class="col-sm-4 col col-form-label">No Telp.</label>
+                                <div class="col-sm-8">
+                                    <input type="number" min="0" class="form-input-custom form-control"
+                                        id="daftarNoTelp" placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <a href="./masuk.html" class="btn btn-primary btn-lg">Daftar</a>
-                    </form>
+                            <a href="./masuk.html" class="btn btn-dark btn-lg">Register</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 

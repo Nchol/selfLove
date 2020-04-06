@@ -1,14 +1,9 @@
-.form-input-custom {
-    border: 1px solid #d1d1d1;
-}
-
 .cards {
     background-color: whitesmoke;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-left: 30px;
     margin-right: 30px;
     padding-bottom: 25px;
     padding-top: 25px;
-    margin-bottom: 100px;
     border-radius: 8px;
 }
