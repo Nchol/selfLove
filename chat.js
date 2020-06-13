@@ -36,14 +36,14 @@ function autoGenerate() {
   $("#container-chat").append(chat);
 }
 
-function actionToCall() {}
+function actionToCall() { }
 
 function bot(msg) {
   const keyword =
     msg
       .toLowerCase()
       .match(
-        /cerita|hi|mencoba|terima kasih|merasa|mengejek|bunuh diri|mati/
+        /cerita|hi|mencoba|terima kasih|merasa|mengejek|bunuh diri|mati|p/
       ) || [];
   console.log(keyword);
   let reply;
@@ -57,6 +57,9 @@ function bot(msg) {
     switch (keyword[0]) {
       case "merasa":
         reply = "apa yang membuatmu merasa berbeda";
+        break;
+      case "p":
+        reply = "Hai, apa ada yang bisa saya bantu ?";
         break;
       case "cerita":
         reply = "Halo, kamu boleh cerita disini. boleh tahu masalah mu apa?";
@@ -100,12 +103,7 @@ function sendText() {
     bot(msg);
   }, 500);
 }
-function enterBtn() {
-  if (event.keyCode === 122) {
-    console.log('mantap');
-    
-  }
-}
+
 
 
 $(document).ready(() => {

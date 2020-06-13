@@ -8,17 +8,28 @@
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ad054fe453.js" crossorigin="anonymous"></script>
   <title>SelfLove</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-      <nav class="navbar  navbar-expand-lg navbar-light">
-        <a class="navbar-text title">SelfLove</a>
-      </nav>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex">
+          <div class="col-sm-12 pl-3">
+            <div class="chevron">
+              <a href="/" style="color: black;">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a href="/pemilihan_psikolog.html" style="color: black;">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="divider"></div>
     <main>
       <!-- banner -->
       <div class="container">
@@ -46,7 +57,7 @@
             <fieldset id="darurat">
               <label class="title-form">Apakah ini darurat?</label>
               <label class="container">Iya
-                <input type="radio"  onchange="handleOnchange('darurat', true)" value="Iya" name="darurat" />
+                <input type="radio" onchange="handleOnchange('darurat', true)" value="Iya" name="darurat" />
                 <span class="checkmark"></span>
               </label>
               <label class="container">Tidak
@@ -83,7 +94,7 @@
               </label>
               <div class="divider"></div>
               <div class="d-flex justify-content-end">
-                <a href="./pemilihan_psikolog.html" type="submit"  class=" btn btn-primary">Kirim</a>
+                <a href="./pemilihan_psikolog.html" type="submit" class=" btn btn-primary">Kirim</a>
               </div>
             </fieldset>
           </form>
