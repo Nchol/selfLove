@@ -13,10 +13,15 @@
 .banner-text {
   position: absolute;
   bottom: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .title-form {
   font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
+}
+.container {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .divider {

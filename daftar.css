@@ -12,3 +12,9 @@
     margin-bottom: 100px;
     border-radius: 8px;
 }
+.col-sm-12 {
+    font-family: 'Quicksand', sans-serif;
+}
+.col-form-label {
+    font-family: 'Quicksand', sans-serif;
+}
