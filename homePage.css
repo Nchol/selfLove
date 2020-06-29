@@ -1,35 +1,56 @@
-.carousel-item {
-    height: 350px;
-  }
-  
-  .carousel-height {
-    height: 300px;
-  }
-  
+ 
   .userProfile {
     font-size: 82px;
   }
   
   .textHPage {
     margin-left: 24px;
+    font-family: 'Quicksand', sans-serif;
+    /* margin-top: 50px; */
+  }
+  #greet {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .selflove {
+    background-color: #00c8eb;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 2px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   
   .cards {
-    background-color: #40e0d0;
+    background-color: #00a2c6;
     margin-bottom: 8px;
+    margin-left: 8px;
     margin-right: 8px;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: larger;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   .problem {
-      color: #000000;
+      color: white;
+      font-family: 'Quicksand', sans-serif;
+      font-size: medium;
   }
   .display-grid {
     display: grid;
     grid-template-columns: 125px 125px 125px;
     grid-row: auto;
     font-size: 14px;
+    margin-top: 5px;
   }
   
   .float {
@@ -45,4 +66,11 @@
     font-size: 30px;
     box-shadow: 2px 2px 3px #999;
   }
-  
+
+  .block {
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(14, 0, 0, 0.2);
+    margin-left: 5px;
+    
+    border-radius: 3px;
+  }
