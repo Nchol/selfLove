@@ -43,14 +43,14 @@ function bot(msg) {
     msg
       .toLowerCase()
       .match(
-        /cerita|hi|mencoba|terima kasih|merasa|mengejek|bunuh diri|mati|p/
+        /cerita|hi|mencoba|terima kasih|merasa|mengejek|bunuh diri|mati|p|yakin|ngejauh/
       ) || [];
   console.log(keyword);
   let reply;
   console.log(countDeath);
   if (keyword[0] === "mati" && countDeath < 1) {
     countDeath++;
-    reply = " Apakah kamu memiliki rencana bunuh diri?";
+    reply = " Kenapa kamu terpikirkan seperti itu, apakah kamu yakin dengan tindakan tersebut?";
   } else if (keyword[0] === "mati" && countDeath > 0) {
     reply = "staf kami akan segera menghubungi anda";
   } else {
@@ -68,17 +68,23 @@ function bot(msg) {
         reply = "Halo, kamu boleh cerita disini. boleh tahu masalah mu apa?";
         break;
       case "mencoba":
-        reply = "Semoga membantu. Apakah ada lagi yang bisa saya bantu?";
+        reply = "oke, semoga cara yang saya berikan dapat membantu. Apakah ada lagi yang bisa saya bantu?";
         break;
       case "terima kasih":
-        reply = "sama-sama semoga hari mu menyenangkan!";
+        reply = "Sama-sama, Semoga hari mu menyenangkan :) ";
         break;
       case "bunuh diri":
         console.log(countDeath);
-        reply = "Apakah kamu tahu kapan kamu akan melakukan hal tersebut?";
+        reply = "Apa kamu yakin dengan tindakan tersebut?";
         break;
       case "mengejek":
         reply = "sepertinya kamu benar-benar sedih saat ini";
+        break;
+      case "ngejauh":
+        reply = "oiya sebaiknya juga kamu melaporkannya kepada guru di sekolah, mau itu guru BK atau wali kelas kamu agar orang yang membuly kamu dapat diberi sanksi atas perilakunya dan agar ia tidak mengulangi perbuatannya lagi";
+        break;
+      case "yakin":
+        reply = "sebaiknya kamu mulai menjauhi orang yang mengejek kamu untuk sementara waktu";
         break;
       default:
         reply = "Saya tidak mengerti apa yang kamu maksud";
